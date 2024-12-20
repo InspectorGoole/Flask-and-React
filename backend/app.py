@@ -20,3 +20,6 @@ if __name__ == "__main__": # this is needed bcuz when this file is imported or c
     app.run(debug=True) # but this if statements makes sure that all the contents run only when the file is run directly
 
 # Sometimes, the virtual environment's Scripts folder is not added to the PATH. Run the flask command directly: python -m flask run
+# for powershell: .\venv\Scripts\activate
+# for cmd: .\venv\Scripts\activate.bat
+# the name of your env should be in green in the terminal

@@ -12,5 +12,11 @@ db = SQLAlchemy(app)
 
 import routes
 
+with app.app_context(): # for sqlalchemy
+    db.create_all()
+# creates the tables
+
 if __name__ == "__main__": # this is needed bcuz when this file is imported or called by other files it will run all the contents automaically and we dont want that
     app.run(debug=True) # but this if statements makes sure that all the contents run only when the file is run directly
+
+# Sometimes, the virtual environment's Scripts folder is not added to the PATH. Run the flask command directly: python -m flask run
